@@ -13,7 +13,7 @@ namespace Library.Models
 		public DbSet<Book> books { get; set; }
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(connectionString);
+			optionsBuilder.UseSqlServer(connectionString); // test
 		}
 	}
 }
