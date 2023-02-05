@@ -9,7 +9,7 @@ namespace Library.Models
 {
 	public class LibraryContext : DbContext
 	{
-		private const string connectionString = "Server";
+		private const string connectionString = "Server=(localdb)\\mssqllocaldb;Database=EFCore;Trusted_Connection=False;";
 		public DbSet<Book> books { get; set; }
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
